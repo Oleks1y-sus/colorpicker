@@ -1,0 +1,99 @@
+body{
+    margin: 0 auto;
+    display: flex;
+}
+.toggle-controls{
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+}
+.photos {
+    position: relative;
+    width: 700px;
+    height: 615px;
+}
+
+.photo, .photo-original {
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    background-size: cover;
+}
+
+.photo {
+    z-index: 10;
+    background-image: url(../img/kyiv.jpg);
+}
+
+.photo-original {
+    z-index: 20;
+    width: 50%;
+    background-image: url(../img/kyiv.jpg);
+}
+.walden-button, .toaster-button, .kelvin-button, .oldie-button{
+    width: 200px;
+    height: 140px;
+    background-image: url(../img/kyiv.jpg);
+    background-size: cover;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+.walden {
+    filter: sepia(0.4) saturate(1.7) contrast(0.9) brightness(1.2) hue-rotate(-20deg);
+}
+
+.toaster {
+    filter: sepia(0.4) saturate(2.5) contrast(0.67) hue-rotate(-30deg);
+}
+
+.kelvin {
+    filter: sepia(0.4) saturate(2.4) brightness(1.3) contrast(1.1);
+}
+
+.oldie {
+    filter: saturate(5) contrast(2) hue-rotate(-180deg);
+}
+
+.waldenos {
+    filter: sepia(0.4) saturate(1.7) contrast(0.9) brightness(1.2) hue-rotate(-20deg);
+}
+
+.toasteros {
+    filter: sepia(0.4) saturate(2.5) contrast(0.67) hue-rotate(-30deg);
+}
+
+.kelvinos {
+    filter: sepia(0.4) saturate(2.4) brightness(1.3) contrast(1.1);
+}
+
+.oldios {
+    filter: saturate(5) contrast(2) hue-rotate(-180deg);
+}
+
+
+ .separator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 30;
+  
+    width: 30px;
+    height: 30px;
+  
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #979797;
+  }
+  .toggle-controls {
+    display: flex;
+    flex-direction: column;
+  } 
